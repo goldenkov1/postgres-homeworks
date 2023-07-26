@@ -11,7 +11,7 @@ CHECK (discontinued in (0, 1));
 
 -- 3. Создать новую таблицу, содержащую все продукты, снятые с продажи (discontinued = 1)
 
-SELECT * INTO old_products FROM products WHERE discontinued = 1
+SELECT * INTO old_products FROM products WHERE discontinued = 1;
 
 -- 4. Удалить из products товары, снятые с продажи (discontinued = 1)
 -- Для 4-го пункта может потребоваться удаление ограничения, связанного с foreign_key. Подумайте, как это можно решить, чтобы связь с таблицей order_details все же осталась.

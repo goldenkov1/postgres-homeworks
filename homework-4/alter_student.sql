@@ -11,19 +11,19 @@ CREATE TABLE student
 
 -- 2. Добавить в таблицу student колонку middle_name varchar
 
-ALTER TABLE student ADD COLUMN middle_name varchar
+ALTER TABLE student ADD COLUMN middle_name varchar;
 
 -- 3. Удалить колонку middle_name
 
-ALTER TABLE student DROP COLUMN middle_name
+ALTER TABLE student DROP COLUMN middle_name;
 
 -- 4. Переименовать колонку birthday в birth_date
 
-ALTER TABLE student RENAME COLUMN birthday TO birth_date
+ALTER TABLE student RENAME COLUMN birthday TO birth_date;
 
 -- 5. Изменить тип данных колонки phone на varchar(32)
 
-ALTER TABLE student ALTER COLUMN phone SET DATA TYPE varchar(32)
+ALTER TABLE student ALTER COLUMN phone SET DATA TYPE varchar(32);
 
 -- 6. Вставить три любых записи с автогенерацией идентификатора
 
@@ -33,4 +33,4 @@ VALUES ('Valera', 'Harlamov', '1948-01-14', 8025646520),
        ('Vladimir', 'Petrov', '1947-06-30',80297654871);
 -- 7. Удалить все данные из таблицы со сбросом идентификатор в исходное состояние
 
-TRUNCATE TABLE student RESTART IDENTITY
+TRUNCATE TABLE student RESTART IDENTITY;
